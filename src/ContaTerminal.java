@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Locale;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
@@ -11,9 +10,7 @@ public class ContaTerminal {
          * NomeCliente String MARIO ANDADE
          * Saldo Double 237.48
          */
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
-
-        //System.out.println("Olá "+nomeCliente+", obrigado por criar uma conta em nosso baco, sua agência é "+Agencia+", conta "+Numero+" e seu saldo "+Saldo+" já está disponível para saque");
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Por favor, digite o seu nome: ");
         String NomeCliente = scanner.nextLine(); //Nome Completo do Cliente Ex: MARIO ANDRADE
